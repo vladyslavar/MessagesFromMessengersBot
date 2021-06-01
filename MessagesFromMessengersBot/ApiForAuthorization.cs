@@ -20,7 +20,6 @@ namespace MessagesFromMessengersBot
             {
 
             }
-            
         }
 
         public void AuthorizeInReddit(long id_tg, string access_token)
