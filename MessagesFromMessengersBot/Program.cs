@@ -69,7 +69,12 @@ namespace MessagesFromMessengersBot
                 }
                 foreach(var user_id in users_ids_twitter)
                 {
-                    if (users_ids_twitter_first.Contains(user_id)) { continue; }
+                    if (users_ids_twitter_first.Contains(user_id)) 
+                    {
+                        List<ReceivedMessagesTwitter> strsT = receivingMesssage.ReceiveMessagesTwitter(user_id);
+                        users_ids_twitter_first.Clear();
+                        continue; 
+                    }
                     else
                     {
                         List<ReceivedMessagesTwitter> strsT = receivingMesssage.ReceiveMessagesTwitter(user_id);
