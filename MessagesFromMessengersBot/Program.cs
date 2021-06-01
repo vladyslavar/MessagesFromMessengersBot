@@ -23,7 +23,7 @@ namespace MessagesFromMessengersBot
         public static List<long> users_ids_twitter_first = new List<long>();
         static void Main(string[] args)
         {
-            botClient = new TelegramBotClient("1837900345:AAE9DqlWWVHqTrfNEP7bxQD352A_2wl_XFM") { Timeout = TimeSpan.FromSeconds(20) };
+            botClient = new TelegramBotClient("[token]") { Timeout = TimeSpan.FromSeconds(20) };
             botClient.OnMessage += BotOnMessageReceived;
             botClient.StartReceiving();
             try
